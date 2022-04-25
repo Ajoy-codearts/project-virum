@@ -1,0 +1,73 @@
+.inner-find-us-heading {
+    margin-top: -20px;
+    padding-bottom: 0;
+
+
+    @media (max-width: 767px)   {
+        margin-top: 45px;
+    }
+
+    &.custom-pad    {
+        padding: 0;
+    }
+
+
+    & .inner-find-us-heading-top {
+        padding-left: 70px;
+
+        & h5    {
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 991px)   {
+            padding-left: 40px;
+        }
+        @media (max-width: 767px)   {
+            padding-left: 0;
+            text-align: center;
+            padding-top: 30px;
+
+        }
+        @media (max-width: 576px)   {
+            padding-bottom: 30px;
+        }
+        @media (max-width: 390px)   {
+        }
+    }
+
+    & .find-us-map {
+        max-height: 750px;
+
+        
+        & iframe    {
+            width: 100%;
+            height: 750px;
+
+            @media (max-width: 767px)   {
+                height: 350px;
+            }
+
+            @media (max-width: 576px)   {
+                height: 250px;
+            }
+    
+        }
+        
+      }
+
+      & .ifu-wrap   {
+        padding-bottom: 28px;
+
+        @media (max-width: 390px)   {
+            padding-bottom: 18px;
+        }
+        & p {
+    
+            & span  {
+                font-weight: 700;
+            }
+        }
+    }
+  }
+
+  

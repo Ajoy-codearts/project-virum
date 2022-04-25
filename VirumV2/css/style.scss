@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* CSS Document */
+@import 'dis/common';
+
+@import 'dis/header';
+@import 'dis/home-banner';
+@import 'dis/experience';
+
+// experience
+@import "dis/experience_gallery";
+
+// parties and event
+@import "dis/parties_event";
+
+// boundaries
+@import "dis/boundaries";
+
+// Footer
+@import 'dis/footer';
+
+
+
+//common page style
+
+//inner banner
+@import 'dis/inner-banner-common';
+
+
+
+
+//experience page
+// experience main gallery
+@import 'dis/experience_main_gallery';
+
+//about us page
+@import 'dis/about_us';
+
+//birthday party
+@import 'dis/birthday-parties'; 
+
+//price and tickets
+@import 'dis/price_and_tickets'; 
+
+//military shooting
+@import 'dis/military_shooting'; 
+
+//blog
+@import 'dis/blog'; 
+
+//blog inner
+@import 'dis/blog_inner'; 
+
+//faq
+@import 'dis/faq';
+
+// find-us
+@import 'dis/find-us';
+
+//inner-party-events
+@import 'dis/inner-parties-events';

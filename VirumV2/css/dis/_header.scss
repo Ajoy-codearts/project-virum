@@ -1,0 +1,126 @@
+header.custom-header{
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    nav.navbar{
+
+        ul.navbar-nav{
+
+            li{
+                margin-right: 76px;
+                &:last-child{
+                    margin-right: 0;
+                }
+                a{
+                    padding: 0;
+                    color: var(--c-primary-text);
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-weight: 400;
+
+                    @media (max-width: 991.95px)    {
+                        color: var(--c-white);
+                    }
+
+                }
+            }
+        }
+    }
+}
+@media (min-width: 992px) and (max-width: 1199.98px){
+    header.custom-header{
+        nav.navbar{
+            ul.navbar-nav{
+                li{margin-left: 40px;}
+            }
+        }
+    }
+}
+@media (max-width: 991.98px){
+    header.custom-header{
+        nav.navbar{
+            .navbar-header{
+
+                // Swagata
+                & .navbar-toggler .icon-bar {
+                    width: 24px;
+                    background: var(--c-primary-dark);
+                    transition: .5s ease;
+                }
+                // Swagata
+                button.navbar-toggler{
+                    border-radius: 4px;
+                }
+            }
+
+            ul.navbar-nav{
+                position: absolute;
+                background-color:var(--c-primary-dark);
+                padding: 20px;
+                border-radius: 10px;
+                top: 95px;
+                left: 0;
+                width: 100%;
+
+                @media (max-width: 576px)   {
+                    top: 70px;
+                }
+
+                li{
+                    margin-left: 0px;
+                    margin-bottom: 10px;
+                    padding-bottom: 10px;
+                    border-bottom: 1px dashed #f1f1f1;
+                    width: 100%;
+                    &:last-child{
+                        margin-bottom: 0;
+                        padding-bottom: 0;
+                        border: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 576px){
+    header.custom-header{
+        nav.navbar{
+            a.navbar-brand{
+                img{
+                    width: 120px;
+                }
+            }
+        }
+    }
+}
+    
+
+
+
+
+
+
+
+// Alternate header for HOMEPAGE section
+.home .custom-header   {
+    position: absolute;
+
+    @media (max-width: 991px)   {
+
+        & .navbar-toggler .icon-bar {
+            width: 24px;
+            background: var(--c-primary-dark);
+            transition: .5s ease;
+        }
+
+       
+    }
+
+    & .nav-link {
+        color: var(--c-white) !important;
+    }
+}
+    

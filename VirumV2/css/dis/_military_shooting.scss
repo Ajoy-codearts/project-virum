@@ -1,0 +1,259 @@
+.custom-inner-banner{
+    h1{
+        font-size: 56px;
+        line-height: 68px;
+        font-weight: 800;
+        color: var(--c-white);
+        margin-bottom: 70px;
+    }
+    .theme_about{
+        .theme_about_content{
+            h4{
+                font-size: 24px;
+                line-height: 33px;
+                color: var(--c-white);
+                font-weight: 400;
+                margin-bottom: 60px;
+            }
+            .theme_about_content_inner{
+                display: flex;
+                justify-content: space-between;
+                width: 90%;
+                margin-bottom: 35px;
+                .custom_img_txt{
+                    h6{
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 24px;
+                    }
+                }
+            }
+            p{
+                font-size: 14px;
+                line-height: 18px;
+                color: var(--c-white);
+                font-weight: 500;
+                margin-bottom: 35px;
+            }
+        }
+        .theme_about_slider{
+            padding-bottom: 70px;
+            .m_gallery{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                grid-gap: 75px;
+                .m_gallery_item{
+                    min-height: 316px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    position: relative;
+                    #m_glry_img{
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        z-index: -1;
+                        border-radius: 30px;
+                    }
+                    .item_logo{
+                        position: absolute;
+                        top: 30px;
+                        right: 23px;
+                        .custom_img_txt{
+                            flex-direction: column;
+                            align-items: flex-end;
+                            span{
+                                margin: 0 0 5px 0;
+                            }
+                            h6{
+                                width: auto;
+                                font-size: 14px;
+                                line-height: 18px;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                    .item_text{
+                        padding: 0 23px 30px;
+                        h6{
+                            color: var(--c-white);
+                            font-size: 22px;
+                            line-height: 26px;
+                            font-weight: 700;
+                            margin-bottom: 19px;
+                        }
+                        p{
+                            color: var(--c-white);
+                            font-size: 14px;
+                            line-height: 18px;
+                            font-weight: 500;
+                        }
+                    }
+                    &:after{
+                            position: absolute;
+                            content: '';
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            background: linear-gradient(180deg, rgba(124, 6, 77, 0) 0%, rgba(88, 3, 54, 0.8) 100%);
+                            border-radius: 30px;
+                    }
+                }
+            }
+            #custom_military_slider2_owl{
+                display: none;
+                .owl-stage-outer{
+                    width: 100%;
+                    .m_gallery_item{
+                        min-height: 316px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-end;
+                        position: relative;
+                        #m_glry_img{
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            z-index: -1;
+                            border-radius: 30px;
+                        }
+                        .item_logo{
+                            position: absolute;
+                            top: 30px;
+                            right: 23px;
+                            .custom_img_txt{
+                                flex-direction: column;
+                                align-items: flex-end;
+                                span{
+                                    margin: 0 0 5px 0;
+                                }
+                                h6{
+                                    width: auto;
+                                    font-size: 14px;
+                                    line-height: 18px;
+                                    font-weight: 500;
+                                }
+                            }
+                        }
+                        .item_text{
+                            padding: 0 23px 30px;
+                            h6{
+                                color: var(--c-white);
+                                font-size: 22px;
+                                line-height: 26px;
+                                font-weight: 700;
+                                margin-bottom: 19px;
+                            }
+                            p{
+                                color: var(--c-white);
+                                font-size: 14px;
+                                line-height: 18px;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .owl-nav{
+            display: block !important;
+            .owl-prev{
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                left: -54px;
+            }
+            .owl-next{
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                margin: 0;
+                right: -54px;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:1600px){
+    .custom-inner-banner{
+        .theme_about{
+            .theme_about_slider{
+                .owl-stage-outer{
+                    width: 90%;
+                    .m_gallery{
+                        width: 90%;
+                    }
+                }  
+            }
+            .owl-nav{
+                .owl-next{
+                    right: 22px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:991px){
+    .custom-inner-banner{
+        h1{
+            text-align: center;
+        }
+        .theme_about{
+            .theme_about_content{
+                margin-bottom: 40px;
+                text-align: center;
+            }
+            .theme_about_slider{
+                .owl-stage-outer{
+                    width: 80%;
+                    margin: 0 auto;
+                    .m_gallery{
+                        width: 80%;
+                    }
+                }  
+            }
+            .owl-nav{
+                .owl-next{
+                    right: 0;
+                }
+                .owl-prev{
+                    left: 0;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:767px){
+    .custom-inner-banner{
+        .theme_about{
+            .theme_about_content{
+                margin-bottom: 40px;
+                text-align: center;
+            }
+            .theme_about_slider{
+                #custom_military_slider1_owl{
+                    display: none;
+                }
+                #custom_military_slider2_owl{
+                    display: block;
+                }
+            }
+            .owl-nav{
+                .owl-next{
+                    right: 0;
+                }
+                .owl-prev{
+                    left: 0;
+                }
+            }
+        }
+    }
+}
+

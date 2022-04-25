@@ -1,0 +1,238 @@
+.birthday-party-content {
+
+
+    & .birthday-toon-wrap img {
+        width: 100%;
+
+        @media (max-width: 991px)   {
+            width: 22%;
+        }
+        @media (max-width: 390px)   {
+            width: 62%;
+        }
+      }
+    & .birthday-toon-wrap {
+        align-self: center;
+        display: inline-block;
+
+        @media (max-width: 991px)   {
+            position: absolute;
+            top: 18px;
+            left: 178px;
+        }
+        @media (max-width: 480px) {
+          top: 31px;
+        }
+        @media (max-width: 390px) {
+          top: 21px;
+          left: 165px;
+          z-index: -1;
+        }
+
+      }
+
+& .birthday-bottom   {
+    padding-bottom: 0 !important;
+    position: relative;
+
+}
+
+    &.custom-pad    {
+        padding: 41px 0;
+
+        @media  (max-width: 767px)  {
+            padding: 31px 0;
+        }
+        @media  (max-width: 576px)  {
+            padding: 21px 0;
+        }
+    }
+
+    & .birthday-party-content-top {
+        
+        color: var(--c-secondary-text);
+        font-family: var(--ff-primary);
+
+        padding-bottom: 41px;
+
+        @media  (max-width: 767px)  {
+            padding-bottom: 23px;
+        }
+        @media  (max-width: 576px)  {
+            padding-bottom: 21px;
+        }
+
+        & h5    {
+            font-weight: 800;
+            font-size: 24px;
+            line-height: 30px;
+            margin-bottom: 30px;
+
+            @media (max-width: 991px)   {
+                font-size: 19px;
+                line-height: 28px;
+                margin-bottom: 14px;
+            }
+
+            @media (max-width: 767px)   {
+                font-size: 15px;
+                line-height: 23px;
+                margin-bottom: 10px;
+            }
+            @media (max-width: 390px)   {
+                font-size: 14px;
+                line-height: 19px;
+                margin-bottom: 7px;
+            }
+        }
+
+        & p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+
+            @media (max-width: 991px)   {
+                font-size: 15px;
+                line-height: 23px;
+            }
+            
+            @media (max-width: 767px)   {
+                font-size: 13px;
+                line-height: 20px;
+            }
+            @media (max-width: 390px)   {
+                font-size: 11px;
+                line-height: 17px;
+            }
+        }
+
+    }
+
+    & .birthday-party-left-img {
+
+        
+
+        & img   {
+            width: 100%;
+            border-radius: 24px;
+
+
+            
+        }
+    }
+
+    & .birthday-party-list  {
+
+        margin-left: 50px;
+
+        @media (max-width: 991px)   {
+            margin-left: 0;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 767px)   {
+            font-size: 15px;
+            line-height: 23px;
+            margin-bottom: 10px;
+        }
+        @media (max-width: 390px)   {
+            font-size: 14px;
+            line-height: 19px;
+            margin-bottom: 7px;
+        }
+
+
+
+        & li {
+        font-family: var(--ff-primary);
+        // font-weight: 700;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--c-secondary-text);
+        position: relative;
+        
+
+        display: flex;
+        align-items: center;
+
+        & .bold-sb  {
+            font-weight: 700;
+            display: inline;
+            margin-right: 0;
+        }
+
+        &:not(:last-child)  {
+            margin-bottom: 20px;
+
+            @media (max-width: 991px)   {
+                margin-bottom: 15px;
+            }
+        }
+
+            & span  {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                border: 1px solid rgb(255, 255, 255);
+                display: inline-block;
+                margin-right: 25px;
+                
+
+                & img  {
+                    width: 100%;
+
+                    
+                }
+            }
+
+            &   p   {
+                @media (max-width: 991px)   {
+                    line-height: 24px;
+                }
+            }
+        }
+
+        
+    }
+    & .birthday-heading h4  {
+        font-family: var(--ff-primary);
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 30px;
+    color: var(--c-primary-dark);
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    }
+
+    & .birthday-snapshots   {
+
+
+        
+
+        & .birthday-gallery-img {
+            display: inline-block;
+            width: 100%;
+
+            & img   {
+                
+                width: 100%;
+                border-radius: 24px;
+                margin-right: 20px;
+
+                @media (max-width: 991px)   {
+                    
+                    margin-top: 15px;
+                    margin-right: 0px;
+                }
+                @media (max-width: 576px)   {
+                    
+                    margin-right: 0px;
+                }
+            }
+        }
+
+        
+
+    }
+}

@@ -1,0 +1,127 @@
+.faq-sec-wrap{
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+
+    @media (max-width: 767px)   {
+        &.custom-pad   {
+            padding: 31px 0;
+        }
+    }
+    .faq-heading{
+        .custom_heading{
+            position: relative;
+            h2{
+                color: var(--c-white);
+
+                @media (max-width: 991px)   {
+                    font-size: 30px;
+                }
+                @media (max-width: 767px)   {
+                    font-size: 26px;
+                }
+                @media (max-width: 576px)   {
+                    font-size: 22px;
+                }
+                @media (max-width: 480px) {
+                  font-size: 17px;
+                }
+                @media (max-width: 390px) {
+                    font-size: 21px;
+                }
+                
+            }
+            span{
+                position: absolute;
+                left: -120px;
+                background-color: transparent;
+                top: -8px;
+
+                @media (max-width: 991px)   {
+                    left: -160px;
+                }
+                @media (max-width: 767px)   {
+                    left: -109px;
+                }
+                img{
+                    height: 188px;
+                    width: auto;
+                }
+            }
+        }
+        
+    }
+    .main-faq {
+        margin-top: 106px;
+
+        @media (max-width: 390px) {
+                margin-top: 50px;
+        }
+        .accordion-item {
+            margin-bottom: 18px;
+            border-radius: 30px 30px;
+            border: 0;
+            background-color: #fff;
+            .accordion-body {
+                
+                p{
+                    font-size: 16px;
+                    line-height: 26px;
+
+                    @media (max-width: 767px)   {
+                        font-size: 13px;
+                        line-height: 26px;
+                    }
+
+                    @media (max-width: 390px) {
+                        font-size: 11px;
+                        line-height: 16px;
+                    }
+                }
+            }
+            .accordion-header{
+
+                .accordion-button{
+                    border-radius: 50px;
+                    font-size: 24px;
+                    font-weight: 800;
+                    padding-left: 30px;
+
+                    @media (max-width: 991px)   {
+                        font-size: 16px;
+                    }
+                    @media (max-width: 767px)   {
+                        font-size: 13px;
+                    }
+
+                    &::after{
+                        background-image: url('../images/arrow-down.png');
+                        height: 12px;
+                    }
+                    &:not(.collapsed){
+                        background-color: #ffdfcb;
+                        color: #000;
+                    }
+                }
+            }
+          }
+      }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .faq-sec-wrap{
+        .faq-heading{
+            .custom_heading{
+                h2{
+                    font-size: 52px;                    
+                }
+                span{
+                    img{
+                        height: 150px;
+                    }
+                }
+            }
+        }
+    }
+}
